@@ -1,10 +1,12 @@
 <h1>List of sellers!</h1>
 
-<% @sellers.each do |seller| %>
-  <p>----------</p><br>
+<% if @sellers %>
+  <% @sellers.each do |seller| %>
+    <p>----------</p><br>
 
-  <h2>Seller Name: <%= seller.name %></h2><br>
-  <!-- Add more fields based on your schema! -->
+    <h2>Seller Name: <%= seller.name %></h2><br>
+    <!-- Add more fields based on your schema! -->
 
-  <p>----------</p><br>
+    <p>----------</p><br>
+  <% end %>
 <% end %>

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
+  root to: 'products#index'
+
   get 'buyers/new', to: 'buyers#new'
   get 'buyers/edit', to: 'buyers#edit'
   get 'buyers/index', to: 'buyers#index'
@@ -22,5 +24,5 @@ Rails.application.routes.draw do
   get 'purchases/new', to: 'purchases#new'
   get 'purchases/index', to: 'purchases#index'
   post 'purchases/create', to: 'purchases#create'
-  
+
 end
