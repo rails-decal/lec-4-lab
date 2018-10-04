@@ -1,0 +1,10 @@
+<h1>List of Products!</h1>
+
+<% @products.each do |product| %>
+  <p>----------</p><br>
+
+  <h2>Product Name: <%= product.name %></h2><br>
+  <!-- Add more fields based on your schema! -->
+
+  <p>----------</p><br>
+<% end %>
